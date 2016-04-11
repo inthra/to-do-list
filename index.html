@@ -9,19 +9,30 @@
   </head>
   <body>
     <div class="container">
-      <div class="col-sm-6">
-        <form id="blank">
-          <div class="form-group">
-            <label for="todo">To-Do Tasks</label>
-            <input type="text" id="todo" class="form-control">
-          </div>
-          <button type="submit" class="btn btn-warning">Submit</button>
-        </form>
+      <h1>Project: To do list</h1>
+      <hr>
+      <div class="row">
+        <div class="col-sm-6">
+          <form id="blank">
+            <div class="form-group">
+              <label for="todo">Add a new task in the box. You can add more tasks by repeating the process.</label>
+              <input type="text" id="todo" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Add Task</button>
+          </form>
+        </div>
       </div>
+      <hr>
+
       <div id="results" class="col-sm-6">
-        <h2>To Do List!</h2>
+        <h3>A list of things to do!</h3>
+        <p>If a task is finished, you can "Double Click" at the task to indicate "Done".</p>
+        <br>
         <ul class="todo-list">
+
         </ul>
+        <br>
+        <button type="button" id="remove" class="btn btn-warning">Remove all finished tasks</button>
       </div>
     </div>
   </body>
