@@ -12,8 +12,8 @@ $(document).ready(function(){
 
     $("ul.todo-list").append("<li>" + newTodo.whatTask + "</li>");
 
-    $("li").dblclick(function(){
-      $(this, "li").text("Done");
+    $("li").last().dblclick(function(){
+      $(this, "li").append(" - Done");
     });
 
     $("#remove").click(function(){
